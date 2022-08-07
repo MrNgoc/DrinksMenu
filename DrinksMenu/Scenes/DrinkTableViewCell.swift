@@ -18,13 +18,15 @@ final class DrinkTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         contentView.backgroundColor = UIColor(red: 237/255, green: 237/255, blue: 237/255, alpha: 1)
-        containerView.layer.cornerRadius = 8
-        containerView.clipsToBounds = true
         imgView.layer.cornerRadius = 8
         imgView.clipsToBounds = true
     
+        containerView.layer.cornerRadius = 8
         containerView.layer.shadowColor = UIColor.black.cgColor
-        containerView.layer.shadowOpacity = 1
+        containerView.layer.shadowOpacity = 0.2
+        containerView.layer.shadowOffset = CGSize(width: 0.0, height: 0)
+        containerView.layer.shadowRadius = 6
+        containerView.layer.masksToBounds = false
     }
     
     func configData(_ model: Drink) {
