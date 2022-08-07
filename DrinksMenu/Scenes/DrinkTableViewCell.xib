@@ -21,13 +21,13 @@
                         <rect key="frame" x="16" y="24" width="479" height="636"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="7SQ-fC-NEc">
-                                <rect key="frame" x="16" y="16" width="447" height="499"/>
+                                <rect key="frame" x="16" y="16" width="447" height="473"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="7SQ-fC-NEc" secondAttribute="height" multiplier="343:383" id="Se7-4o-NZO"/>
+                                    <constraint firstAttribute="width" secondItem="7SQ-fC-NEc" secondAttribute="height" multiplier="343:363" id="Se7-4o-NZO"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyT-Rr-4dH">
-                                <rect key="frame" x="16" y="531" width="447" height="56.5"/>
+                                <rect key="frame" x="16" y="505" width="447" height="82.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

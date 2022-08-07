@@ -15,12 +15,12 @@ target 'DrinksMenu' do
 
   target 'DrinksMenuTests' do
     inherit! :search_paths
+    pod 'RxSwift', '6.1'
+    pod 'RxCocoa', '6.1'
     # Pods for testing
   end
 
   target 'DrinksMenuUITests' do
-    pod 'RxCocoa', '6.1'
-    pod 'RealmSwift', '10.21'
     # Pods for testing
   end
 
