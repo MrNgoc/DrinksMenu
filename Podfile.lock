@@ -1,0 +1,48 @@
+PODS:
+  - Kingfisher (7.3.1)
+  - Realm (10.21.0):
+    - Realm/Headers (= 10.21.0)
+  - Realm/Headers (10.21.0)
+  - RealmSwift (10.21.0):
+    - Realm (= 10.21.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRealm (5.0.4):
+    - Realm (~> 10.21)
+    - RealmSwift (~> 10.21)
+    - RxCocoa (~> 6.1)
+    - RxSwift (~> 6.1)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - RealmSwift (= 10.21)
+  - RxCocoa (= 6.1)
+  - RxRealm
+  - RxSwift (= 6.1)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxRealm
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Kingfisher: f411ab4902e733fc0c40522920fb5a236d7a7334
+  Realm: 55220cda83aabd773740d18518e05fdbe00b87cc
+  RealmSwift: 129dce1dd6b5d9194a37f568aaf32a6c10d1a803
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRealm: 666c8785327fe2fff972a3093b35dc7055c1ca38
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+
+PODFILE CHECKSUM: 451a473ad4f658d7230868f5afc6b9c08fd41183
+
+COCOAPODS: 1.11.3

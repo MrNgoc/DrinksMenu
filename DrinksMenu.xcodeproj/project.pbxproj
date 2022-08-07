@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CEFA0563BA2A6CDFAC36040 /* Pods_DrinksMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAE85006D1298ED7AFEA495 /* Pods_DrinksMenu.framework */; };
+		E5B769172EA47DD07B6E9B85 /* Pods_DrinksMenuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8D93DF0546DFA4BA8BDDBE /* Pods_DrinksMenuTests.framework */; };
+		FA822437517B84DF5E2893DF /* Pods_DrinksMenu_DrinksMenuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092BBB6049DBFD6BCB39012F /* Pods_DrinksMenu_DrinksMenuUITests.framework */; };
+		FCAD0641289A69F200B8B127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD0640289A69F200B8B127 /* AppDelegate.swift */; };
+		FCAD064A289A69F500B8B127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAD0649289A69F500B8B127 /* Assets.xcassets */; };
+		FCAD064D289A69F500B8B127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAD064B289A69F500B8B127 /* LaunchScreen.storyboard */; };
+		FCAD0662289A69F500B8B127 /* DrinksMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD0661289A69F500B8B127 /* DrinksMenuUITests.swift */; };
+		FCAD0664289A69F500B8B127 /* DrinksMenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD0663289A69F500B8B127 /* DrinksMenuUITestsLaunchTests.swift */; };
+		FCAD3B9A289A6FA500F2632B /* DrinksMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAD3B98289A6FA500F2632B /* DrinksMenuViewController.xib */; };
+		FCAD3B9C289A711C00F2632B /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD3B9B289A711C00F2632B /* Drink.swift */; };
+		FCAD3B9E289A714400F2632B /* DrinksMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD3B9D289A714400F2632B /* DrinksMenuViewModel.swift */; };
+		FCAD3BA0289A71A700F2632B /* DrinksMenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD3B9F289A71A700F2632B /* DrinksMenuService.swift */; };
+		FCAD3BA7289A7BFC00F2632B /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD3BA5289A7BFC00F2632B /* DrinkTableViewCell.swift */; };
+		FCAD3BA8289A7BFC00F2632B /* DrinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAD3BA6289A7BFC00F2632B /* DrinkTableViewCell.xib */; };
+		FCE209E6289DF1EB0035E232 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209E2289DF1EB0035E232 /* Reusable.swift */; };
+		FCE209E7289DF1EB0035E232 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209E3289DF1EB0035E232 /* ErrorTracker.swift */; };
+		FCE209E8289DF1EB0035E232 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209E4289DF1EB0035E232 /* ActivityIndicator.swift */; };
+		FCE209E9289DF1EB0035E232 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209E5289DF1EB0035E232 /* Observable+Ext.swift */; };
+		FCE209EE289E0F680035E232 /* DrinkUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209ED289E0F680035E232 /* DrinkUseCase.swift */; };
+		FCE209F2289E184B0035E232 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209F1289E184B0035E232 /* Application.swift */; };
+		FCE209F7289E1F540035E232 /* RealmDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209F6289E1F540035E232 /* RealmDrink.swift */; };
+		FCE209FA289E22DA0035E232 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209F9289E22DA0035E232 /* UseCaseProvider.swift */; };
+		FCE209FD289E79E90035E232 /* DrinksMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209FC289E79E90035E232 /* DrinksMenuViewController.swift */; };
+		FCE209FF289E7B6B0035E232 /* DrinksUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE209FE289E7B6B0035E232 /* DrinksUseCaseMock.swift */; };
+		FCE20A00289E80C30035E232 /* DrinksMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD0657289A69F500B8B127 /* DrinksMenuTests.swift */; };
+		FCE20A4F289EB1DD0035E232 /* DrinksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE20A4E289EB1DD0035E232 /* DrinksUseCase.swift */; };
+		FCE20A51289F4A760035E232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE20A50289F4A760035E232 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCAD0654289A69F500B8B127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCAD0635289A69F200B8B127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCAD063C289A69F200B8B127;
+			remoteInfo = DrinksMenu;
+		};
+		FCAD065E289A69F500B8B127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCAD0635289A69F200B8B127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCAD063C289A69F200B8B127;
+			remoteInfo = DrinksMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		092BBB6049DBFD6BCB39012F /* Pods_DrinksMenu_DrinksMenuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinksMenu_DrinksMenuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4247E9131EC4B1020373A6A1 /* Pods-DrinksMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksMenu.release.xcconfig"; path = "Target Support Files/Pods-DrinksMenu/Pods-DrinksMenu.release.xcconfig"; sourceTree = "<group>"; };
+		548F2E2D871248097556E874 /* Pods-DrinksMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksMenuTests.debug.xcconfig"; path = "Target Support Files/Pods-DrinksMenuTests/Pods-DrinksMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		728178C649A17437814FE77C /* Pods-DrinksMenu-DrinksMenuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksMenu-DrinksMenuUITests.release.xcconfig"; path = "Target Support Files/Pods-DrinksMenu-DrinksMenuUITests/Pods-DrinksMenu-DrinksMenuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A5983794D146DDA584008D0 /* Pods-DrinksMenu-DrinksMenuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksMenu-DrinksMenuUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrinksMenu-DrinksMenuUITests/Pods-DrinksMenu-DrinksMenuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BAE85006D1298ED7AFEA495 /* Pods_DrinksMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinksMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00C1F0CC7E7124E953E4D9E /* Pods-DrinksMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksMenuTests.release.xcconfig"; path = "Target Support Files/Pods-DrinksMenuTests/Pods-DrinksMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFE45C9E629C3EABABD95512 /* Pods-DrinksMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksMenu.debug.xcconfig"; path = "Target Support Files/Pods-DrinksMenu/Pods-DrinksMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		CB8D93DF0546DFA4BA8BDDBE /* Pods_DrinksMenuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinksMenuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAD063D289A69F200B8B127 /* DrinksMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinksMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAD0640289A69F200B8B127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCAD0649289A69F500B8B127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCAD064C289A69F500B8B127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCAD0653289A69F500B8B127 /* DrinksMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinksMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAD0657289A69F500B8B127 /* DrinksMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksMenuTests.swift; sourceTree = "<group>"; };
+		FCAD065D289A69F500B8B127 /* DrinksMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinksMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAD0661289A69F500B8B127 /* DrinksMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksMenuUITests.swift; sourceTree = "<group>"; };
+		FCAD0663289A69F500B8B127 /* DrinksMenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksMenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCAD3B98289A6FA500F2632B /* DrinksMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinksMenuViewController.xib; sourceTree = "<group>"; };
+		FCAD3B9B289A711C00F2632B /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		FCAD3B9D289A714400F2632B /* DrinksMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksMenuViewModel.swift; sourceTree = "<group>"; };
+		FCAD3B9F289A71A700F2632B /* DrinksMenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksMenuService.swift; sourceTree = "<group>"; };
+		FCAD3BA3289A797100F2632B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAD3BA5289A7BFC00F2632B /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
+		FCAD3BA6289A7BFC00F2632B /* DrinkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkTableViewCell.xib; sourceTree = "<group>"; };
+		FCE209E2289DF1EB0035E232 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		FCE209E3289DF1EB0035E232 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		FCE209E4289DF1EB0035E232 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		FCE209E5289DF1EB0035E232 /* Observable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
+		FCE209ED289E0F680035E232 /* DrinkUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUseCase.swift; sourceTree = "<group>"; };
+		FCE209F1289E184B0035E232 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		FCE209F6289E1F540035E232 /* RealmDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDrink.swift; sourceTree = "<group>"; };
+		FCE209F9289E22DA0035E232 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		FCE209FC289E79E90035E232 /* DrinksMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinksMenuViewController.swift; sourceTree = "<group>"; };
+		FCE209FE289E7B6B0035E232 /* DrinksUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksUseCaseMock.swift; sourceTree = "<group>"; };
+		FCE20A4E289EB1DD0035E232 /* DrinksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksUseCase.swift; sourceTree = "<group>"; };
+		FCE20A50289F4A760035E232 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCAD063A289A69F200B8B127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CEFA0563BA2A6CDFAC36040 /* Pods_DrinksMenu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAD0650289A69F500B8B127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B769172EA47DD07B6E9B85 /* Pods_DrinksMenuTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAD065A289A69F500B8B127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA822437517B84DF5E2893DF /* Pods_DrinksMenu_DrinksMenuUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C99A0FCE1BB32D6808C0BB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BAE85006D1298ED7AFEA495 /* Pods_DrinksMenu.framework */,
+				092BBB6049DBFD6BCB39012F /* Pods_DrinksMenu_DrinksMenuUITests.framework */,
+				CB8D93DF0546DFA4BA8BDDBE /* Pods_DrinksMenuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55791A05CB1FE5D56AC407D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFE45C9E629C3EABABD95512 /* Pods-DrinksMenu.debug.xcconfig */,
+				4247E9131EC4B1020373A6A1 /* Pods-DrinksMenu.release.xcconfig */,
+				8A5983794D146DDA584008D0 /* Pods-DrinksMenu-DrinksMenuUITests.debug.xcconfig */,
+				728178C649A17437814FE77C /* Pods-DrinksMenu-DrinksMenuUITests.release.xcconfig */,
+				548F2E2D871248097556E874 /* Pods-DrinksMenuTests.debug.xcconfig */,
+				A00C1F0CC7E7124E953E4D9E /* Pods-DrinksMenuTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCAD0634289A69F200B8B127 = {
+			isa = PBXGroup;
+			children = (
+				FCAD063F289A69F200B8B127 /* DrinksMenu */,
+				FCAD0656289A69F500B8B127 /* DrinksMenuTests */,
+				FCAD0660289A69F500B8B127 /* DrinksMenuUITests */,
+				FCAD063E289A69F200B8B127 /* Products */,
+				55791A05CB1FE5D56AC407D4 /* Pods */,
+				1C99A0FCE1BB32D6808C0BB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCAD063E289A69F200B8B127 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD063D289A69F200B8B127 /* DrinksMenu.app */,
+				FCAD0653289A69F500B8B127 /* DrinksMenuTests.xctest */,
+				FCAD065D289A69F500B8B127 /* DrinksMenuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCAD063F289A69F200B8B127 /* DrinksMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD0640289A69F200B8B127 /* AppDelegate.swift */,
+				FCE209EA289E09D30035E232 /* Domain */,
+				FCE209EF289E10650035E232 /* Platform */,
+				FCE209F0289E18330035E232 /* Application */,
+				FCE209F4289E1BFB0035E232 /* Scenes */,
+				FCE209E1289DF1EB0035E232 /* Utility */,
+				FCE20A50289F4A760035E232 /* Main.storyboard */,
+				FCAD3BA3289A797100F2632B /* Info.plist */,
+				FCAD0649289A69F500B8B127 /* Assets.xcassets */,
+				FCAD064B289A69F500B8B127 /* LaunchScreen.storyboard */,
+			);
+			path = DrinksMenu;
+			sourceTree = "<group>";
+		};
+		FCAD0656289A69F500B8B127 /* DrinksMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD0657289A69F500B8B127 /* DrinksMenuTests.swift */,
+				FCE209FE289E7B6B0035E232 /* DrinksUseCaseMock.swift */,
+			);
+			path = DrinksMenuTests;
+			sourceTree = "<group>";
+		};
+		FCAD0660289A69F500B8B127 /* DrinksMenuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD0661289A69F500B8B127 /* DrinksMenuUITests.swift */,
+				FCAD0663289A69F500B8B127 /* DrinksMenuUITestsLaunchTests.swift */,
+			);
+			path = DrinksMenuUITests;
+			sourceTree = "<group>";
+		};
+		FCE209E1289DF1EB0035E232 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FCE209E2289DF1EB0035E232 /* Reusable.swift */,
+				FCE209E3289DF1EB0035E232 /* ErrorTracker.swift */,
+				FCE209E4289DF1EB0035E232 /* ActivityIndicator.swift */,
+				FCE209E5289DF1EB0035E232 /* Observable+Ext.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		FCE209EA289E09D30035E232 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FCE209EB289E0A110035E232 /* Entries */,
+				FCE209EC289E0B0A0035E232 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FCE209EB289E0A110035E232 /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD3B9B289A711C00F2632B /* Drink.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		FCE209EC289E0B0A0035E232 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				FCE209ED289E0F680035E232 /* DrinkUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		FCE209EF289E10650035E232 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				FCE209F5289E1F060035E232 /* Entities */,
+				FCE209FB289E265F0035E232 /* PlatformServices */,
+				FCE209F8289E22C00035E232 /* UseCases */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		FCE209F0289E18330035E232 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FCE209F1289E184B0035E232 /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FCE209F4289E1BFB0035E232 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD3B9D289A714400F2632B /* DrinksMenuViewModel.swift */,
+				FCE209FC289E79E90035E232 /* DrinksMenuViewController.swift */,
+				FCAD3BA5289A7BFC00F2632B /* DrinkTableViewCell.swift */,
+				FCAD3BA6289A7BFC00F2632B /* DrinkTableViewCell.xib */,
+				FCAD3B98289A6FA500F2632B /* DrinksMenuViewController.xib */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FCE209F5289E1F060035E232 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FCE209F6289E1F540035E232 /* RealmDrink.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FCE209F8289E22C00035E232 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				FCE20A4E289EB1DD0035E232 /* DrinksUseCase.swift */,
+				FCE209F9289E22DA0035E232 /* UseCaseProvider.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FCE209FB289E265F0035E232 /* PlatformServices */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD3B9F289A71A700F2632B /* DrinksMenuService.swift */,
+			);
+			path = PlatformServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCAD063C289A69F200B8B127 /* DrinksMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAD0667289A69F500B8B127 /* Build configuration list for PBXNativeTarget "DrinksMenu" */;
+			buildPhases = (
+				363BA17729BF7A99917AE56E /* [CP] Check Pods Manifest.lock */,
+				FCAD0639289A69F200B8B127 /* Sources */,
+				FCAD063A289A69F200B8B127 /* Frameworks */,
+				FCAD063B289A69F200B8B127 /* Resources */,
+				EC4357E1643FF7E90BB968F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrinksMenu;
+			productName = DrinksMenu;
+			productReference = FCAD063D289A69F200B8B127 /* DrinksMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCAD0652289A69F500B8B127 /* DrinksMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAD066A289A69F500B8B127 /* Build configuration list for PBXNativeTarget "DrinksMenuTests" */;
+			buildPhases = (
+				CDF4A176CEF76F53A07413F6 /* [CP] Check Pods Manifest.lock */,
+				FCAD064F289A69F500B8B127 /* Sources */,
+				FCAD0650289A69F500B8B127 /* Frameworks */,
+				FCAD0651289A69F500B8B127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCAD0655289A69F500B8B127 /* PBXTargetDependency */,
+			);
+			name = DrinksMenuTests;
+			productName = DrinksMenuTests;
+			productReference = FCAD0653289A69F500B8B127 /* DrinksMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCAD065C289A69F500B8B127 /* DrinksMenuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAD066D289A69F500B8B127 /* Build configuration list for PBXNativeTarget "DrinksMenuUITests" */;
+			buildPhases = (
+				34A968F1894B9D581EA554A3 /* [CP] Check Pods Manifest.lock */,
+				FCAD0659289A69F500B8B127 /* Sources */,
+				FCAD065A289A69F500B8B127 /* Frameworks */,
+				FCAD065B289A69F500B8B127 /* Resources */,
+				790171116B8466BB92F8F9B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCAD065F289A69F500B8B127 /* PBXTargetDependency */,
+			);
+			name = DrinksMenuUITests;
+			productName = DrinksMenuUITests;
+			productReference = FCAD065D289A69F500B8B127 /* DrinksMenuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCAD0635289A69F200B8B127 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FCAD063C289A69F200B8B127 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FCAD0652289A69F500B8B127 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FCAD063C289A69F200B8B127;
+					};
+					FCAD065C289A69F500B8B127 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FCAD063C289A69F200B8B127;
+					};
+				};
+			};
+			buildConfigurationList = FCAD0638289A69F200B8B127 /* Build configuration list for PBXProject "DrinksMenu" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCAD0634289A69F200B8B127;
+			productRefGroup = FCAD063E289A69F200B8B127 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCAD063C289A69F200B8B127 /* DrinksMenu */,
+				FCAD0652289A69F500B8B127 /* DrinksMenuTests */,
+				FCAD065C289A69F500B8B127 /* DrinksMenuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCAD063B289A69F200B8B127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAD3B9A289A6FA500F2632B /* DrinksMenuViewController.xib in Resources */,
+				FCE20A51289F4A760035E232 /* Main.storyboard in Resources */,
+				FCAD064D289A69F500B8B127 /* LaunchScreen.storyboard in Resources */,
+				FCAD064A289A69F500B8B127 /* Assets.xcassets in Resources */,
+				FCAD3BA8289A7BFC00F2632B /* DrinkTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAD0651289A69F500B8B127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAD065B289A69F500B8B127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34A968F1894B9D581EA554A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinksMenu-DrinksMenuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		363BA17729BF7A99917AE56E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinksMenu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		790171116B8466BB92F8F9B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinksMenu-DrinksMenuUITests/Pods-DrinksMenu-DrinksMenuUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinksMenu-DrinksMenuUITests/Pods-DrinksMenu-DrinksMenuUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrinksMenu-DrinksMenuUITests/Pods-DrinksMenu-DrinksMenuUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDF4A176CEF76F53A07413F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinksMenuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4357E1643FF7E90BB968F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinksMenu/Pods-DrinksMenu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinksMenu/Pods-DrinksMenu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrinksMenu/Pods-DrinksMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCAD0639289A69F200B8B127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE209F2289E184B0035E232 /* Application.swift in Sources */,
+				FCAD3B9E289A714400F2632B /* DrinksMenuViewModel.swift in Sources */,
+				FCAD3B9C289A711C00F2632B /* Drink.swift in Sources */,
+				FCAD3BA0289A71A700F2632B /* DrinksMenuService.swift in Sources */,
+				FCE209E7289DF1EB0035E232 /* ErrorTracker.swift in Sources */,
+				FCE209E9289DF1EB0035E232 /* Observable+Ext.swift in Sources */,
+				FCE209FA289E22DA0035E232 /* UseCaseProvider.swift in Sources */,
+				FCAD0641289A69F200B8B127 /* AppDelegate.swift in Sources */,
+				FCE209FD289E79E90035E232 /* DrinksMenuViewController.swift in Sources */,
+				FCAD3BA7289A7BFC00F2632B /* DrinkTableViewCell.swift in Sources */,
+				FCE209EE289E0F680035E232 /* DrinkUseCase.swift in Sources */,
+				FCE20A4F289EB1DD0035E232 /* DrinksUseCase.swift in Sources */,
+				FCE209F7289E1F540035E232 /* RealmDrink.swift in Sources */,
+				FCE209E8289DF1EB0035E232 /* ActivityIndicator.swift in Sources */,
+				FCE209E6289DF1EB0035E232 /* Reusable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAD064F289A69F500B8B127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE209FF289E7B6B0035E232 /* DrinksUseCaseMock.swift in Sources */,
+				FCE20A00289E80C30035E232 /* DrinksMenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAD0659289A69F500B8B127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAD0664289A69F500B8B127 /* DrinksMenuUITestsLaunchTests.swift in Sources */,
+				FCAD0662289A69F500B8B127 /* DrinksMenuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCAD0655289A69F500B8B127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCAD063C289A69F200B8B127 /* DrinksMenu */;
+			targetProxy = FCAD0654289A69F500B8B127 /* PBXContainerItemProxy */;
+		};
+		FCAD065F289A69F500B8B127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCAD063C289A69F200B8B127 /* DrinksMenu */;
+			targetProxy = FCAD065E289A69F500B8B127 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCAD064B289A69F500B8B127 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCAD064C289A69F500B8B127 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCAD0665289A69F500B8B127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCAD0666289A69F500B8B127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCAD0668289A69F500B8B127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE45C9E629C3EABABD95512 /* Pods-DrinksMenu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrinksMenu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drink Menu ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tcb.drink.menu.DrinksMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FCAD0669289A69F500B8B127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4247E9131EC4B1020373A6A1 /* Pods-DrinksMenu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrinksMenu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drink Menu ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tcb.drink.menu.DrinksMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FCAD066B289A69F500B8B127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548F2E2D871248097556E874 /* Pods-DrinksMenuTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tcb.drink.menu.DrinksMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrinksMenu.app/DrinksMenu";
+			};
+			name = Debug;
+		};
+		FCAD066C289A69F500B8B127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00C1F0CC7E7124E953E4D9E /* Pods-DrinksMenuTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tcb.drink.menu.DrinksMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrinksMenu.app/DrinksMenu";
+			};
+			name = Release;
+		};
+		FCAD066E289A69F500B8B127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5983794D146DDA584008D0 /* Pods-DrinksMenu-DrinksMenuUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tcb.drink.menu.DrinksMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrinksMenu;
+			};
+			name = Debug;
+		};
+		FCAD066F289A69F500B8B127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 728178C649A17437814FE77C /* Pods-DrinksMenu-DrinksMenuUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tcb.drink.menu.DrinksMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrinksMenu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCAD0638289A69F200B8B127 /* Build configuration list for PBXProject "DrinksMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAD0665289A69F500B8B127 /* Debug */,
+				FCAD0666289A69F500B8B127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAD0667289A69F500B8B127 /* Build configuration list for PBXNativeTarget "DrinksMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAD0668289A69F500B8B127 /* Debug */,
+				FCAD0669289A69F500B8B127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAD066A289A69F500B8B127 /* Build configuration list for PBXNativeTarget "DrinksMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAD066B289A69F500B8B127 /* Debug */,
+				FCAD066C289A69F500B8B127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAD066D289A69F500B8B127 /* Build configuration list for PBXNativeTarget "DrinksMenuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAD066E289A69F500B8B127 /* Debug */,
+				FCAD066F289A69F500B8B127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCAD0635289A69F200B8B127 /* Project object */;
+}
